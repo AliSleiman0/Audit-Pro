@@ -3274,29 +3274,7 @@ const AboutPage = ({ navigate }) => (
                 <div className="corner tl"></div>
                 <div className="corner br"></div>
                 <div className="frame"></div>
-                {/* Stylized portrait silhouette */}
-                <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-                  <defs>
-                    <linearGradient id="portrait-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0" stopColor="#143075" />
-                      <stop offset="1" stopColor="#0A1F44" />
-                    </linearGradient>
-                    <radialGradient id="portrait-light" cx="0.5" cy="0.35" r="0.5">
-                      <stop offset="0" stopColor="#2A6FDB" stopOpacity="0.18" />
-                      <stop offset="1" stopColor="#0A1F44" stopOpacity="0" />
-                    </radialGradient>
-                  </defs>
-                  <rect width="400" height="500" fill="url(#portrait-bg)" />
-                  <rect width="400" height="500" fill="url(#portrait-light)" />
-                  {/* shoulders */}
-                  <path d="M50 500 Q 50 380 200 360 Q 350 380 350 500 Z" fill="#0A1F44" stroke="#2A6FDB" strokeWidth="0.5" opacity="0.9" />
-                  {/* head */}
-                  <ellipse cx="200" cy="240" rx="68" ry="84" fill="#1A2A45" stroke="#2A6FDB" strokeWidth="0.5" opacity="0.9" />
-                  {/* shirt collar */}
-                  <path d="M150 380 L 200 420 L 250 380 L 230 460 L 170 460 Z" fill="#050E26" stroke="#2A6FDB" strokeWidth="0.4" />
-                  {/* tie hint */}
-                  <path d="M195 420 L 205 420 L 210 480 L 200 500 L 190 480 Z" fill="#2A6FDB" opacity="0.6" />
-                </svg>
+                <img src="jean-bacha.png" alt="Jean Bacha — Founding Partner" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", zIndex: 2 }} />
               </div>
             </div>
 
